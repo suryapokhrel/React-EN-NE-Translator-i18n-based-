@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import LocaleSwitcher from "./components/LocaleSwitcher";
+import FormatExamples from "./components/FormatExamples";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const { t } = useTranslation();
+  const [count, setCount] = useState(1);
+  const name = "Surya";
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="card">
+      <div className="row" style={{ justifyContent: "space-between" }}>
+        <h2>{t("nav.title")}</h2>
+        <LocaleSwitcher />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <hr />
+      <p style={{ fontSize: "1.25rem" }}>{t("greeting", { name })}</p>
+      <div className="row">
+        <button onClick={() => setCount(Math.max(0, count - 1))}>–</button>
+        <span className="code">count = {count}</span>
+        <button onClick={() => setCount(count + 1)}>+</button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <p>{t("items", { count })}</p>
+      <hr />
+      <FormatExamples />
+    </div>
+  );
 }
-
-export default App

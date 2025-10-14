@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "title": "i18next डेमो (अंग्रेजी/नेपाली)",
+    "english": "English",
+    "nepali": "नेपाली"
+  },
+  "greeting": "नमस्ते, {{name}}!",
+  "items": "तपाईंसँग {{count}} वस्तु छ",
+  "items_plural": "तपाईंसँग {{count}} वस्तुहरू छन्",
+  "lastLogin": "अɥÊतम लगइन: {{date}}",
+  "price": "मूल्य: {{amount}}",
+  "examples": {
+    "header": "ढाँचा उदाहरणहरू",
+    "date": "आज {{date}} हो",
+    "number": "ढाँचाबद्ध संख्या: {{value}}",
+    "currency": "कु ल एनपीआर: {{npr}}"
+  }
+}

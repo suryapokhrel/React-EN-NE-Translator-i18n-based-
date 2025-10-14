@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "title": "i18next demo (EN/NE)",
+    "english": "English",
+    "nepali": "नेपाली"
+  },
+  "greeting": "Hello, {{name}}!",
+  "items": "You have {{count}} item",
+  "items_plural": "You have {{count}} items",
+  "lastLogin": "Last login: {{date}}",
+  "price": "Price: {{amount}}",
+  "examples": {
+    "header": "Formatting examples",
+    "date": "Today is {{date}}",
+    "number": "Formatted number: {{value}}",
+    "currency": "NPR total: {{npr}}"
+  }
+}
