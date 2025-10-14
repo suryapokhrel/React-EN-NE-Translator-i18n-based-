@@ -35,5 +35,5 @@ This project demonstrates how to:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR-USERNAME/react-en-ne-translator.git
+   git clone https://github.com/suryapokhrel/React-EN-NE-Translator-i18n-based-.git
    cd react-en-ne-translator
