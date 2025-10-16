@@ -5,14 +5,13 @@
     "nepali": "नेपाली"
   },
   "greeting": "Hello, {{name}}!",
-  "items": "You have {{count}} item",
-  "items_plural": "You have {{count}} items",
-  "lastLogin": "Last login: {{date}}",
-  "price": "Price: {{amount}}",
+  "items": "You have {{count}} items in your cart",
+  "countLabel": "count = {{count}}",
   "examples": {
-    "header": "Formatting examples",
-    "date": "Today is {{date}}",
+    "header": "Localization examples",
+    "date": "Current date and time: {{date}}",
     "number": "Formatted number: {{value}}",
-    "currency": "NPR total: {{npr}}"
+    "currency": "Formatted currency: {{npr}}",
+    "percent": "Percentage format: {{rate}}"
   }
 }

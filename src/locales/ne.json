@@ -5,14 +5,13 @@
     "nepali": "नेपाली"
   },
   "greeting": "नमस्ते, {{name}}!",
-  "items": "तपाईंसँग {{count}} वस्तु छ",
-  "items_plural": "तपाईंसँग {{count}} वस्तुहरू छन्",
-  "lastLogin": "अɥÊतम लगइन: {{date}}",
-  "price": "मूल्य: {{amount}}",
+  "items": "तपाईंको कार्टमा {{count}} वस्तुहरू छन्",
+  "countLabel": "गणना = {{count}}",
   "examples": {
-    "header": "ढाँचा उदाहरणहरू",
-    "date": "आज {{date}} हो",
+    "header": "स्थानीयकरण उदाहरणहरू",
+    "date": "हालको मिति र समय: {{date}}",
     "number": "ढाँचाबद्ध संख्या: {{value}}",
-    "currency": "कु ल एनपीआर: {{npr}}"
+    "currency": "ढाँचाबद्ध मुद्रा: {{npr}}",
+    "percent": "प्रतिशत ढाँचा: {{rate}}"
   }
 }
