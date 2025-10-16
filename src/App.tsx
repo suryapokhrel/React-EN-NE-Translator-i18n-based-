@@ -252,22 +252,7 @@ export default function App() {
             <AlertDialogCancel onClick={() => setUnsupportedOpen(false)}>
               {t("actions.cancel")}
             </AlertDialogCancel>
-            <AlertDialogAction
-              onClick={() => {
-                setUnsupportedOpen(false);
-                i18n.changeLanguage("en");
-              }}
-            >
-              {t("actions.switchToEnglish")}
-            </AlertDialogAction>
-            <AlertDialogAction
-              onClick={() => {
-                setUnsupportedOpen(false);
-                i18n.changeLanguage("ne");
-              }}
-            >
-              {t("actions.switchToNepali")}
-            </AlertDialogAction>
+            
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>

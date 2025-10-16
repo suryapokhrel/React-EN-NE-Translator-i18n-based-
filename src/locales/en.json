@@ -32,11 +32,11 @@
   },
 
   "messages": {
-    "unsupportedCountry": "No localized language available for {{country}} yet — showing English by default."
+    "unsupportedCountry": "No localized language available for {{country}} yet - showing English by default."
   },
 
   "pricing": {
-    "title": "Translation Approach — Cost & Trade-offs",
+    "title": "Translation Approach - Cost & Trade-offs",
     "col": {
       "method": "Method",
       "cost": "Cost (indicative)*",
@@ -79,7 +79,7 @@
     },
     "cloud": {
       "title": "What are Cloud Translation APIs?",
-      "body1": "Hosted services (Google, Microsoft, AWS) that translate text you send them—ideal for vendor-generated or large dynamic content.",
+      "body1": "Hosted services (Google, Microsoft, AWS) that translate text you send them - ideal for vendor-generated or large dynamic content.",
       "points": {
         "dynamic": "Great for dynamic text: products, blogs, reviews",
         "glossary": "Glossaries keep brand and domain terms consistent",
