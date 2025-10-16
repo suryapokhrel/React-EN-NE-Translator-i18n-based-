@@ -1,5 +1,4 @@
 // src/components/LocaleSwitcher.tsx
-import * as React from "react";
 import { useTranslation } from "react-i18next";
 
 export default function LocaleSwitcher({
