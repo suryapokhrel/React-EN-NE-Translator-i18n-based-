@@ -7,11 +7,98 @@
   "greeting": "Hello, {{name}}!",
   "items": "You have {{count}} items in your cart",
   "countLabel": "count = {{count}}",
+
+  "labels": {
+    "detectedCountry": "Detected country",
+    "country": { "unknown": "Unknown" },
+    "detectedButton": "Detected: {{lang}} ({{country}})"
+  },
+  "alerts": {
+    "noTranslationTitle": "Translation not available",
+    "noTranslationRich": "We don't yet support translations for {{country}} ({{lang}}). You can continue in English or Nepali."
+  },
+  "actions": {
+    "cancel": "Cancel",
+    "switchToEnglish": "Continue in English",
+    "switchToNepali": "Switch to Nepali"
+  },
+
   "examples": {
     "header": "Localization examples",
     "date": "Current date and time: {{date}}",
     "number": "Formatted number: {{value}}",
     "currency": "Formatted currency: {{npr}}",
     "percent": "Percentage format: {{rate}}"
+  },
+
+  "messages": {
+    "unsupportedCountry": "No localized language available for {{country}} yet — showing English by default."
+  },
+
+  "pricing": {
+    "title": "Translation Approach — Cost & Trade-offs",
+    "col": {
+      "method": "Method",
+      "cost": "Cost (indicative)*",
+      "pros": "Pros",
+      "cons": "Cons"
+    },
+    "rows": {
+      "i18n": {
+        "name": "Manual i18n (JSON catalogs)",
+        "cost": "Free (engineering time only)",
+        "pros": "Full control; consistent wording; great for UI",
+        "cons": "Manual updates; not ideal for user/vendor content"
+      },
+      "cloud": {
+        "name": "Cloud Translation API",
+        "cost": "Pay-per-characters (e.g., Google ~$20/million)",
+        "pros": "Auto-translate dynamic content; scalable; fast to ship",
+        "cons": "Recurring cost; glossary setup; quality varies"
+      },
+      "hybrid": {
+        "name": "Hybrid (i18n + API)",
+        "cost": "Mixed: Free for UI, pay-per-use for content",
+        "pros": "Best of both: control + scale",
+        "cons": "More moving parts; higher maintenance"
+      }
+    },
+    "refs": "References: <g>Google Translate Pricing</g> · <m>Azure Translator Pricing</m> · <a>AWS Translate Pricing</a>"
+  },
+
+  "info": {
+    "i18n": {
+      "title": "What is i18n (internationalization)?",
+      "body1": "i18n means engineering the app so it can switch languages without code changes. UI text lives in translation catalogs, not hardcoded strings.",
+      "points": {
+        "structured": "Structured UI wording in JSON catalogs (e.g., en.json, ne.json)",
+        "plurals": "Correct plural, number, date, and currency formatting",
+        "seo": "Better accessibility and SEO via lang attributes and localized routes"
+      },
+      "link": "Reference: <a>i18next official documentation</a>"
+    },
+    "cloud": {
+      "title": "What are Cloud Translation APIs?",
+      "body1": "Hosted services (Google, Microsoft, AWS) that translate text you send them—ideal for vendor-generated or large dynamic content.",
+      "points": {
+        "dynamic": "Great for dynamic text: products, blogs, reviews",
+        "glossary": "Glossaries keep brand and domain terms consistent",
+        "cache": "Cache translations to control latency and cost"
+      },
+      "links": "References: <g>Google Cloud Translate</g> · <m>Azure Translator</m> · <a>AWS Translate</a>"
+    },
+    "hybrid": {
+      "title": "What is the Hybrid approach?",
+      "body1": "Use i18n for platform UI (full control) and Cloud APIs for dynamic content (scale). This balances quality and speed.",
+      "points": {
+        "split": "Split responsibilities: static UI via i18n, dynamic content via API",
+        "quality": "Control key terms in UI; let APIs handle volume content",
+        "scale": "Scales to more languages with minimal engineering changes"
+      }
+    }
+  },
+
+  "footer": {
+    "tz": "Timezone"
   }
 }
